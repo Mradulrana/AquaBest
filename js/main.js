@@ -919,7 +919,7 @@ function displayItems(page) {
 
 function setupPagination() {
     const paginationContainer = document.getElementById('paginationContainer');
-    paginationContainer.innerHTML = null;
+    paginationContainer.innerHTML = "";
 
     const pageCount = Math.ceil(totalItems / itemsPerPage);
 
@@ -995,4 +995,5 @@ function updatePagination() {
 // Call setupPagination and displayItems initially
 setupPagination();
 displayItems(currentPage);
+
 

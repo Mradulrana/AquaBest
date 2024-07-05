@@ -76,3 +76,33 @@
         console.error("Search input not found");
     }
 })();
+
+
+// share btn logic here 
+const shareButton = document.querySelector('.share-btn');
+
+shareButton.addEventListener('click', async function() {
+    console.log("click")
+    if (navigator.share) {
+        try {
+            await navigator.share({
+                title: document.title,
+                text: 'Check out this link!',
+                url: window.location.href
+            });
+            console.log('Shared successfully');
+        } catch (error) {
+            console.error('Error sharing:', error);
+        }
+    } else {
+        alert('Sharing not supported on this browser. You can manually copy the link.');
+    }
+});
+
+document.querySelector('.facebook-share-btn').addEventListener('click', function() {
+    const shareURL = encodeURIComponent(window.location.href);
+    const shareText = encodeURIComponent(document.title);
+    const facebookURL = `https://www.facebook.com/sharer/sharer.php?u=${shareURL}&quote=${shareText}`;
+    
+    window.open(facebookURL, '_blank', 'width=1000px, height=1000px');
+});
