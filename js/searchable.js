@@ -1,25 +1,25 @@
 (function() {
     // Sample product list for suggestion
     const products = [
-        { name: "Domestic Water Filter", url: "./domestic-water-filter.html" },
-        { name: "Commercial Water Purifier", url: "./commercial-water-purifier.html" },
-        { name: "Water Softener", url: "./water-softener" },
-        { name: "Industrial Water Purifier", url: "./industrial-water-purifier.html" },
-        { name: "Multi-Media Filtration System", url: "./multi-media-filtration-system.html" },
-        { name: "Uv Water Filtration System", url: "./uv-water-filtration-system.html" },
-        { name: "Industrial Water Softener", url: "./industrial-water-softener.html" },
-        { name: "Copper Silver Ionization", url: "./copper-silver-ionization.html" },
-        { name: "Media Collection & Anti-Scale", url: "./media-collection-anti-scale.html" },
-        { name: "Commercial Water Filtration", url: "./commercial-water-filtration.html" },
-        { name: "AquaBest Deionized Water System", url: "./aquabest-deionized-water-system.html" },
-        { name: "Big Blue Jumbo Filters", url: "./big-blue-jumbo-filters.html" },
-        { name: "Central Water Filtration System", url: "./central-water-filtration-system.html" },
-        { name: "Ultraviolet-UV", url: "./ultraviolet-uv.html" },
-        { name: "Shower Filter", url: "./shower-filter.html" },
-        { name: "Filter Cartridges", url: "./filter-cartridges.html" },
-        { name: "Water Dispenser", url: "./water-dispenser.html" },
-        { name: "Water Filters", url: "./water-filters.html" },
-        { name: "Anti-Scale Products", url: "./anti-scale-products.html" }
+        { name: "Domestic Water Filter", url: "../domestic-water-purifier.html" },
+        { name: "Commercial Water Purifier", url: "../commercial-water-filtration.html" },
+        { name: "Water Softener", url: "../AquaBest-water-softener.html" },
+        { name: "Industrial Water Purifier", url: "../industrial-water-purifier.html" },
+        { name: "Multi-Media Filtration System", url: "../multi-media-filtration-system.html" },
+        { name: "Uv Water Filtration System", url: "../uv-water-filtration-system.html" },
+        { name: "Industrial Water Softener", url: "../industrial-water-softener.html" },
+        { name: "Copper Silver Ionization", url: "../copper-silver-ionization.html" },
+        { name: "Media Collection & Anti-Scale", url: "../media-collection-anti-scale.html" },
+        { name: "Commercial Water Filtration", url: "../commercial-water-filtration.html" },
+        { name: "AquaBest Deionized Water System", url: "../aquabest-deionized-water-system.html" },
+        { name: "Big Blue Jumbo Filters", url: "../big-blue-jumbo-filter-system.html" },
+        { name: "Central Water Filtration System", url: "../central-water-filtration-system.html" },
+        { name: "Ultraviolet-UV", url: "../ultraviolet-uv.html" },
+        { name: "Shower Filter", url: "../shower-filter.html" },
+        { name: "Filter Cartridges", url: "../filter-cartridges.html" },
+        { name: "Water Dispenser", url: "../water-dispenser.html" },
+        { name: "Water Filters", url: "../water-filters.html" },
+        { name: "Anti-Scale Products", url: "../anti-scale-products.html" }
     ];
 
     // Function to show suggestions based on user input

@@ -940,39 +940,27 @@
                         <!-- logo / end -->
                     </a>
                 </div>
-                <div class="site-header__search">
-                    <div class="search search--location--header ">
-                        <div class="search__body">
-                            <form class="search__form" action="">
-                                <select class="search__categories" aria-label="Category" style="display: none;">
-                                    <option value="all">All Categories</option>
-                                    <option>Instruments</option>
-                                    <option>&nbsp;&nbsp;&nbsp;&nbsp;Power Tools</option>
-                                    <option>&nbsp;&nbsp;&nbsp;&nbsp;Hand Tools</option>
-                                    <option>&nbsp;&nbsp;&nbsp;&nbsp;Machine Tools</option>
-                                    <option>&nbsp;&nbsp;&nbsp;&nbsp;Power Machinery</option>
-                                    <option>&nbsp;&nbsp;&nbsp;&nbsp;Measurement</option>
-                                    <option>&nbsp;&nbsp;&nbsp;&nbsp;Clothes and PPE</option>
-                                    <option>Electronics</option>
-                                    <option>Computers</option>
-                                    <option>Automotive</option>
-                                    <option>Furniture & Appliances</option>
-                                    <option>Music & Books</option>
-                                    <option>Health & Beauty</option>
-                                </select>
-                                <input class="search__input" name="search" placeholder="Search over 10,000 products"
-                                    aria-label="Site search" type="text" autocomplete="off">
-                                <button class="search__button search__button--type--submit" type="submit">
-                                    <svg width="20px" height="20px">
-                                        <use xlink:href="images/sprite.svg#search-20"></use>
-                                    </svg>
-                                </button>
-                                <div class="search__border"></div>
-                            </form>
-                            <div class="search__suggestions suggestions suggestions--location--header"></div>
+                 <div class="site-header__search">
+                        <div class="search search--location--header">
+                            <div class="search__body">
+                                <form class="search__form" action="" onsubmit="return handleSearch(event)">
+                                    <select class="search__categories" aria-label="Category" style="display:none">
+                                        <option value="all">All Categories</option>
+                                        <option value="domestic-water-filter">&nbsp;&nbsp;&nbsp;&nbsp;Domestic Water Filter</option>
+                                        <!-- Other options omitted for brevity -->
+                                    </select>
+                                    <input class="search__input new-class-name" name="search" placeholder="Search over 10,000 products" aria-label="Site search" type="text" autocomplete="off" oninput="showSuggestions(this.value)">
+                                    <!-- <button class="search__button search__button--type--submit" type="submit">
+                                        <svg width="20px" height="20px">
+                                            <use xlink:href="images/sprite.svg#search-20"></use>
+                                        </svg>
+                                    </button> -->
+                                    <div class="search__border"></div>
+                                </form>
+                                <div class="search__suggestions suggestions suggestions--location--header new-suggestions-class"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
                 <div class="site-header__phone">
                     <div class="site-header__phone-title">Customer Service</div>
                     <div class="site-header__phone-number">+971507977375</div>
@@ -3531,65 +3519,65 @@
                         <div class="col-6 col-md-3 col-lg-2">
                             <div class="site-footer__widget footer-links">
                                 <h5 class="footer-links__title">Information</h5>
-                                <ul class="footer-links__list">
-                                    <li class="footer-links__item"><a href="" class="footer-links__link">Home
-                                        </a></li>
-                                    <li class="footer-links__item"><a href="" class="footer-links__link">All
-                                            Products
-                                        </a></li>
-                                    <li class="footer-links__item"><a href="" class="footer-links__link">Maintenance
-                                        </a></li>
-                                    <li class="footer-links__item"><a href=""
-                                            class="footer-links__link">Services</a>
-                                    </li>
-                                    <li class="footer-links__item"><a href="" class="footer-links__link">About
-                                            Us</a></li>
-                                    <li class="footer-links__item"><a href="" class="footer-links__link">Contact</a>
-                                    </li>
-                                </ul>
+                                  <ul class="footer-links__list">
+                                        <li class="footer-links__item"><a href="./index.html" class="footer-links__link">Home
+                                            </a></li>
+                                        <li class="footer-links__item"><a href="./product-alt.html" class="footer-links__link">All
+                                                Products
+                                            </a></li>
+                                        <li class="footer-links__item"><a href="./maintenance.html" class="footer-links__link">Maintenance
+                                            </a></li>
+                                        <li class="footer-links__item"><a href="./services.html"
+                                                class="footer-links__link">Services</a>
+                                        </li>
+                                        <li class="footer-links__item"><a href="./about-us.html" class="footer-links__link">About
+                                                Us</a></li>
+                                        <li class="footer-links__item"><a href="./contact-us.html" class="footer-links__link">Contact</a>
+                                        </li>
+                                    </ul>
                             </div>
                         </div>
                         <div class="col-6 col-md-3 col-lg-3">
                             <div class="site-footer__widget footer-links">
                                 <h5 class="footer-links__title">Our Products</h5>
-                                <ul class="footer-links__list">
-                                    <li class="footer-links__item"><a href="" class="footer-links__link">Domestic
-                                            Water filter</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Commercial
-                                            Water Purifier</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Water
-                                            Softener</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Industrial
-                                            Water Purifier</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Whole
-                                            House Water Filtration</a></li>
-                                    <li class="footer-links__item"><a href="#"
-                                            class="footer-links__link">Multi-Media Filtration System</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Uv Water
-                                            Filtration System</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Industrial
-                                            Water Softener</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Copper
-                                            Silver Ionziation</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Media
-                                            Collection & Anti-Scale</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Commercial
-                                            Water Filtration</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">AquaBest
-                                            Deionized Water System</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Big Blue
-                                            Jumbo Filters</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Central
-                                            Water Filtration System</a></li>
-                                    <li class="footer-links__item"><a href="#"
-                                            class="footer-links__link">Ultraviolet-UV</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Shower
-                                            Filter</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Filter
-                                            Cartridges</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Water
-                                            Dispenser</a></li>
-                                </ul>
+                                     <ul class="footer-links__list">
+                                        <li class="footer-links__item"><a href="./domestic-water-purifier.html" class="footer-links__link">Domestic
+                                                Water filter</a></li>
+                                        <li class="footer-links__item"><a href="./commercial-water-filtration.html" class="footer-links__link">Commercial
+                                                Water Purifier</a></li>
+                                        <li class="footer-links__item"><a href="./shower-facial.html" class="footer-links__link">Water
+                                                Softener</a></li>
+                                        <li class="footer-links__item"><a href="./Industrial-water-softener.html" class="footer-links__link">Industrial
+                                                Water Purifier</a></li>
+                                        <li class="footer-links__item"><a href="./whole-house-filtration-system.html" class="footer-links__link">Whole
+                                                House Water Filtration</a></li>
+                                        <li class="footer-links__item"><a href="./multi-media-filtration-system.html"
+                                                class="footer-links__link">Multi-Media Filtration System</a></li>
+                                        <li class="footer-links__item"><a href="./uv-water-filtration-system.html" class="footer-links__link">Uv Water
+                                                Filtration System</a></li>
+                                        <li class="footer-links__item"><a href="./Industrial-water-softener.html" class="footer-links__link">Industrial
+                                                Water Softener</a></li>
+                                        <li class="footer-links__item"><a href="./copper-silver-ionization.html" class="footer-links__link">Copper
+                                                Silver Ionziation</a></li>
+                                        <li class="footer-links__item"><a href="./media-collection-anti-scale.html" class="footer-links__link">Media
+                                                Collection & Anti-Scale</a></li>
+                                        <li class="footer-links__item"><a href="./commercial-water-filtration.html" class="footer-links__link">Commercial
+                                                Water Filtration</a></li>
+                                        <li class="footer-links__item"><a href="./deionized-water-system.html" class="footer-links__link">AquaBest
+                                                Deionized Water System</a></li>
+                                        <li class="footer-links__item"><a href="./big-blue-jumbo-filter-system.html" class="footer-links__link">Big Blue
+                                                Jumbo Filters</a></li>
+                                        <li class="footer-links__item"><a href="./water-dispenser.html" class="footer-links__link">Central
+                                                Water Filtration System</a></li>
+                                        <li class="footer-links__item"><a href="./ultravilot-uv.html"
+                                                class="footer-links__link">Ultraviolet-UV</a></li>
+                                        <li class="footer-links__item"><a href="./shower-facial.html" class="footer-links__link">Shower
+                                                Filter</a></li>
+                                        <li class="footer-links__item"><a href="./filter-cartridges.html" class="footer-links__link">Filter
+                                                Cartridges</a></li>
+                                        <li class="footer-links__item"><a href="./water-dispenser.html" class="footer-links__link">Water
+                                                Dispenser</a></li>
+                                    </ul>
                             </div>
                         </div>
                         <div class="col-12 col-md-12 col-lg-3">
@@ -3606,39 +3594,35 @@
                                     <button
                                         class="footer-newsletter__form-button btn btn-primary">Subscribe</button>
                                 </form> -->
-                                <ul class="footer-links__list">
-                                    <li class="footer-links__item"><a href="" class="footer-links__link">Water
-                                            Filter</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Anti-Scale
-                                            Products</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">AquaBest
-                                            UV Sleeves</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">AquaBest
-                                            UV Ballast</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">AquaBest
-                                            UV Sleeves</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">In Line
-                                            Filters</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">In Line
-                                            Filters</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">RO
-                                            Membrane</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">RO
-                                            Membrane Housing</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Pentair
-                                            FRP-Fiber Glass Tank</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Dosing
-                                            Pump</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Stainless
-                                            Cluster Filter</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Commercial
-                                            Water Filtration System</li>
-                                    <li class="footer-links__item"><a href="#"
-                                            class="footer-links__link">Demineralization System</a></li>
-                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Deionizied
-                                            Water Systems DI</a></li>
+                             <ul class="footer-links__list">
+                                        <li class="footer-links__item"><a href="./water-filter.html" class="footer-links__link">Water
+                                                Filter</a></li>
+                                        <li class="footer-links__item"><a href="./anti-scale-product.html" class="footer-links__link">Anti-Scale
+                                                Products</a></li>
+                                        <li class="footer-links__item"><a href="./AquaBest-uv-sleeves.html" class="footer-links__link">AquaBest
+                                                UV Sleeves</a></li>
+                                        <li class="footer-links__item"><a href="./aquaBest-uv-ballast.html" class="footer-links__link">AquaBest
+                                                UV Ballast</a></li>
+                                        <li class="footer-links__item"><a href="./in-line-filter.html" class="footer-links__link">In Line
+                                                Filters</a></li>
+                                        <li class="footer-links__item"><a href="./ro-membrane.html" class="footer-links__link">RO
+                                                Membrane</a></li>
+                                        <li class="footer-links__item"><a href="./ro-membrane-housing.html" class="footer-links__link">RO
+                                                Membrane Housing</a></li>
+                                        <li class="footer-links__item"><a href="./frp-fiber-glass-tank.html" class="footer-links__link">Pentair
+                                                FRP-Fiber Glass Tank</a></li>
+                                        <li class="footer-links__item"><a href="./dosing-pump.html" class="footer-links__link">Dosing
+                                                Pump</a></li>
+                                        <li class="footer-links__item"><a href="./cluster-filter.html" class="footer-links__link">Stainless
+                                                Cluster Filter</a></li>
+                                        <li class="footer-links__item"><a href="commercial-water-filtration.html" class="footer-links__link">Commercial
+                                                Water Filtration System</li>
+                                        <li class="footer-links__item"><a href="./demineralization-system.html"
+                                                class="footer-links__link">Demineralization System</a></li>
+                                        <li class="footer-links__item"><a href="./deionized-water-system.html" class="footer-links__link">Deionizied
+                                                Water Systems DI</a></li>
 
-                                </ul>
+                                    </ul>
                                 <div class="footer-newsletter__text footer-newsletter__text--social">
                                     Follow us on social networks
                                 </div>
@@ -3738,6 +3722,7 @@
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
     </script>
 
+       <script src ="js/searchable.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
