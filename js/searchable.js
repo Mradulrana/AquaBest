@@ -1,7 +1,7 @@
 (function() {
     // Sample product list for suggestion
     const products = [
-        { name: "Domestic Water Filter", url: "./domestic-water-purifier.html", url:"../domestic-water-purifier.html" },
+        { name: "Domestic Water Filter", url: "domestic-water-purifier.html", url:"../domestic-water-purifier.html" },
         { name: "Commercial Water Purifier", url: "./commercial-water-filtration.html",  url: "../commercial-water-filtration.html" },
         { name: "Water Softener", url: "./AquaBest-water-softener.html",  url: "../AquaBest-water-softener.html" },
         { name: "Industrial Water Purifier", url: "./industrial-water-purifier.html",  url: "../industrial-water-purifier.html" },
