@@ -20,7 +20,7 @@
         { name: "Water Dispenser", url: "water-dispenser.html", url: "../water-dispenser.html" },
         { name: "Water Filters", url: "water-filters.html", url: "../water-filters.html" },
         { name: "Anti-Scale Products", url: "anti-scale-product.html", url: "../anti-scale-product.html" },
-        { name: "Swimming Pool Filtration", url: "magnetized-water-system.html", url: "../magnetized-water-system.html" }
+        { name: "Swimming Pool Filtration", url: "/magnetized-water-system.html", url: "../magnetized-water-system.html" }
     ];
 
     // Function to show suggestions based on user input
