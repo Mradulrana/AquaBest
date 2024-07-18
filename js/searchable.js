@@ -1,26 +1,26 @@
 (function() {
     // Sample product list for suggestion
     const products = [
-        { name: "Domestic Water Filter", url: "domestic-water-purifier.html", url:"../domestic-water-purifier.html" },
-        { name: "Commercial Water Purifier", url: "./commercial-water-filtration.html",  url: "../commercial-water-filtration.html" },
-        { name: "Water Softener", url: "./AquaBest-water-softener.html",  url: "../AquaBest-water-softener.html" },
-        { name: "Industrial Water Purifier", url: "./industrial-water-purifier.html",  url: "../industrial-water-purifier.html" },
-        { name: "Multi-Media Filtration System", url: "./multi-media-filtration-system.html", url: "../multi-media-filtration-system.html" },
-        { name: "Uv Water Filtration System", url: "./uv-water-filtration-system.html", url: "../uv-water-filtration-system.html"  },
-        { name: "Industrial Water Softener", url: "./industrial-water-softener.html", url: "../industrial-water-softener.html" },
-        { name: "Copper Silver Ionization", url: "./copper-silver-ionization.html", url: "../copper-silver-ionization.html" },
-        { name: "Media Collection & Anti-Scale", url: "./media-collection-anti-scale.html",  url: "../media-collection-anti-scale.html" },
-        { name: "Commercial Water Filtration", url: "./commercial-water-filtration.html",  url: "../commercial-water-filtration.html" },
-        { name: "AquaBest Deionized Water System", url: "./deionized-water-system.html",  url: "../deionized-water-system.html" },
-        { name: "Big Blue Jumbo Filters", url: "./big-blue-jumbo-filter-system.html", url: "../big-blue-jumbo-filter-system.html" },
-        { name: "Central Water Filtration System", url: "./water-dispenser.html", url: "../water-dispenser.html" },
-        { name: "Ultraviolet-UV", url: "./ultraviolet-uv.html",  url: "../ultraviolet-uv.html" },
-        { name: "Shower Filter", url: "./shower-filter.html", url: "../shower-filter.html" },
-        { name: "Filter Cartridges", url: "./filter-cartridges.html", url: "../filter-cartridges.html" },
-        { name: "Water Dispenser", url: "./water-dispenser.html", url: "../water-dispenser.html" },
-        { name: "Water Filters", url: "./water-filters.html", url: "../water-filters.html" },
-        { name: "Anti-Scale Products", url: "./anti-scale-product.html", url: "../anti-scale-product.html" },
-        { name: "Swimming Pool Filtration", url: "./magnetized-water-system.html", url: "../magnetized-water-system.html" }
+        { name: "Domestic Water Filter", url: "domestic-water-purifier.html" },
+        { name: "Commercial Water Purifier", url: "../commercial-water-filtration.html" },
+        { name: "Water Softener", url: "../AquaBest-water-softener.html" },
+        { name: "Industrial Water Purifier", url: "../industrial-water-purifier.html" },
+        { name: "Multi-Media Filtration System", url: "../multi-media-filtration-system.html" },
+        { name: "Uv Water Filtration System", url: "../uv-water-filtration-system.html"  },
+        { name: "Industrial Water Softener", url: "../industrial-water-softener.html" },
+        { name: "Copper Silver Ionization", url: "../copper-silver-ionization.html" },
+        { name: "Media Collection & Anti-Scale", url: "../media-collection-anti-scale.html" },
+        { name: "Commercial Water Filtration", url: "../commercial-water-filtration.html" },
+        { name: "AquaBest Deionized Water System", url: "../deionized-water-system.html" },
+        { name: "Big Blue Jumbo Filters", url: "../big-blue-jumbo-filter-system.html" },
+        { name: "Central Water Filtration System", url: "../water-dispenser.html" },
+        { name: "Ultraviolet-UV", url: "../ultraviolet-uv.html" },
+        { name: "Shower Filter", url: "../shower-filter.html" },
+        { name: "Filter Cartridges", url: "../filter-cartridges.html" },
+        { name: "Water Dispenser", url: "../water-dispenser.html" },
+        { name: "Water Filters", url: "../water-filters.html" },
+        { name: "Anti-Scale Products", url: "../anti-scale-product.html" },
+        { name: "Swimming Pool Filtration", url: "../magnetized-water-system.html" }
     ];
 
     // Function to show suggestions based on user input
@@ -60,10 +60,21 @@
         event.preventDefault(); // Prevent default form submission behavior
 
         const input = document.querySelector('.search__input.new-class-name').value.trim();
-        const category = document.querySelector('.search__categories').value;
         
-        // Handle search logic here, e.g., redirect to search results page
-        window.location.href = `/search?query=${input}&category=${category}`;
+        // Check if the search input is empty
+        if (input.length === 0) {
+            return; // Do nothing if input is empty
+        }
+
+        // Check if there are any matching products
+        const matchingProducts = products.filter(product => product.name.toLowerCase().includes(input.toLowerCase()));
+        if (matchingProducts.length === 0) {
+            window.location.href = '/404.html'; // Redirect to 404 page if no products match
+            return;
+        }
+
+        // Handle search logic here if needed (you can remove this if not needed)
+        console.log(`Search term: ${input}`);
     };
 
     // Event listener for input changes
