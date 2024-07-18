@@ -1,7 +1,7 @@
 (function() {
     // Sample product list for suggestion
     const products = [
-        { name: "Domestic Water Filter", url: "/domestic-water-purifier.html" },
+        { name: "Domestic Water Filter", url: "/domestic-water-purifier.html"},
         { name: "Commercial Water Purifier", url: "/commercial-water-filtration.html" },
         { name: "Water Softener", url: "/AquaBest-water-softener.html" },
         { name: "Industrial Water Purifier", url: "/industrial-water-purifier.html" },
@@ -20,7 +20,18 @@
         { name: "Water Dispenser", url: "/water-dispenser.html" },
         { name: "Water Filters", url: "/water-filters.html" },
         { name: "Anti-Scale Products", url: "/anti-scale-product.html" },
-        { name: "Swimming Pool Filtration", url: "/magnetized-water-system.html" }
+        { name: "Swimming Pool Filtration", url: "/magnetized-water-system.html" },
+        {name: "Industrial-ro", url: "/industrial-ro.html"},
+        { name: "800-gpd-water-treatment-plant", url: "../products-files/800-gpd-water-treatment-plant.html" },
+        { name: "1500-gpd-water-treatment-plant", url: "../products-files/1500-gpd-water-treatment-plant.html" },
+        { name: "3000-gpd-water-treatment-plant", url: "../products-files/3000-gpd-water-treatment-plant.html" },
+        { name: "4500-gpd-water-treatment-plant", url: "../products-files/4500-gpd-water-treatment-plant.html" },
+        { name: "6000-gpd-water-treatment-plant", url: "../products-files/6000-gpd-water-treatment-plant.html" },
+        { name: "8000-gpd-water-treatment-plant", url: "../products-files/8000-gpd-water-treatment-plant.html" },
+        { name: "10000-gpd-water-treatment-plant", url: "../products-files/10000-gpd-water-treatment-plant.html" },
+        { name: "50000-gpd-water-treatment-plant", url: "../products-files/50000-gpd-water-treatment-plant.html" },
+        { name: "70000-gpd-water-treatment-plant", url: "../products-files/70000-gpd-water-treatment-plant.html" },
+        { name: "200000-gpd-water-treatment-plant", url: "../products-files/200000-gpd-water-treatment-plant.html"},
     ];
 
     // Function to show suggestions based on user input
@@ -44,6 +55,7 @@
                 suggestionItem.textContent = product.name;
                 suggestionItem.onclick = () => {
                     window.location.href = product.url; // Redirect to product URL on click
+
                 };
                 suggestionsContainer.appendChild(suggestionItem);
             });
