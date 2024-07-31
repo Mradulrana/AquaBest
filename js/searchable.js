@@ -20,7 +20,7 @@
         { name: "Water Dispenser", url: "/water-dispenser.html" },
         { name: "Water Filters", url: "/water-filters.html" },
         { name: "Anti-Scale Products", url: "/anti-scale-product.html" },
-        { name: "Swimming Pool Filtration", url: "/magnetized-water-system.html" },
+        { name: "Swimming Pool Filtration", url: "/swimming-pool-filtration.html" },
         {name: "Industrial-ro", url: "/industrial-ro.html"},
         { name: "800-gpd-water-treatment-plant", url: "../products-files/800-gpd-water-treatment-plant.html" },
         { name: "1500-gpd-water-treatment-plant", url: "../products-files/1500-gpd-water-treatment-plant.html" },

@@ -8266,6 +8266,12 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
   .contact-us__map {
     height: 320px;
   }
+  .site-footer__bottom{
+    flex-direction: column;
+  }
+  .site-footer__copyright{
+    text-align: center !important;
+  }
 }
 /*
 // .faq
