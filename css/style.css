@@ -5870,7 +5870,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
 .mobile-header__panel {
   z-index: 10;
   position: relative;
-  background: #968665;
+  background: #7CB1CD;
   -webkit-box-shadow: 0 1px rgba(0, 0, 0, 0.04), inset 0 -1px rgba(0, 0, 0, 0.04);
           box-shadow: 0 1px rgba(0, 0, 0, 0.04), inset 0 -1px rgba(0, 0, 0, 0.04);
   color: #fff;
@@ -6489,7 +6489,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
 */
 .nav-panel {
   height: 54px;
-  background: #968665 ;
+  background: #7CB1CD;
   -webkit-box-shadow: 0 1px rgba(0, 0, 0, 0.04), inset 0 -1px rgba(0, 0, 0, 0.04);
           box-shadow: 0 1px rgba(0, 0, 0, 0.04), inset 0 -1px rgba(0, 0, 0, 0.04);
   color: #fff;
@@ -7151,7 +7151,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
 .site-header {
   position: relative;
   z-index: 100;
-  background:  #968665;
+  background:  #7CB1CD;
   color: #fff;
 }
 
@@ -7380,12 +7380,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
 */
 .topbar {
   height: 34px;
-  background: #968665
-  ;
+  background: #7CB1CD;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-bottom: 1px solid #968665
-  ;
+  border-bottom: 1px solid #7CB1CD;
   font-size: 14px;
   line-height: 14px;
   color: #fff;
@@ -7758,7 +7756,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
 */
 .site-footer {
   margin-top: 16px;
-  background: #968665;
+  background: #7CB1CD;
   color: #fff;
   border-top: 1px solid #ebebeb;
 }
@@ -7901,7 +7899,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
   border: none;
   cursor: pointer;
   color: #fff;
-  background: #968665;
+  background: #7CB1CD;
   border: 1px solid #fff;
   fill: #fff;
   -ms-flex-negative: 0;

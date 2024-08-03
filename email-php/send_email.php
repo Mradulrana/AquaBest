@@ -7,8 +7,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['message'];
 
     // Email details
-    $to = "info@aquabestuae.com";  // Replace with your email address
-    $headers = "From: " . $email;
+    $to = "info@aquabestuae.com";  
+    $headers = "From: " . $email . "\r\n" .
+               "Reply-To: " . $email . "\r\n" .
+               "X-Mailer: PHP/" . phpversion();
 
     // Compose the email
     $email_body = "Name: $name\n";
@@ -18,7 +20,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Send the email
     if (mail($to, $subject, $email_body, $headers)) {
-        echo "Message sent successfully!";
+        // Redirect to thanku.html on success
+        header("Location: thankyou.html");
+        exit(); // Ensure no further code is executed after the redirect
     } else {
         echo "Failed to send message.";
     }
